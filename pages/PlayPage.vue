@@ -6,9 +6,11 @@
 </template>
 
 <script>
-console.log($nuxt)
-
-export default {}
+export default {
+  created() {
+    console.log(this.$route.path)
+  },
+}
 </script>
 
 <style lang="scss" scoped>
